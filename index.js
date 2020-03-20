@@ -17,7 +17,7 @@ MongoStore.prototype.set = function (key, value, lifetime, callback) {
   var _id = this.options.prefix+key;
   var expiration = lifetime ? moment().add(lifetime, 'seconds').toDate() : undefined;
 
-  this._collection.update({
+  this._collection.replaceOne({
     _id: _id
   }, {
     _id: _id,
