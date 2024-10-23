@@ -14,13 +14,20 @@
   "license": "BSD",
   "devDependencies": {
     "expect.js": "~0.3.1",
-    "express": "~4.14.0",
-    "mocha": "~3.1.2",
-    "mongo-getdb": "~3.0.0"
+    "mocha": "~10.7.3",
+    "moment": "~2.30.1",
+    "mongo-getdb": "~5.0.1"
   },
   "dependencies": {
     "express-brute": "~1.0.1",
-    "moment": "~2.13.0",
     "xtend": "~2.1.1"
+  },
+  "peerDependencies": {
+    "express": "4.x"
+  },
+  "pnpm": {
+    "overrides": {
+      "underscore@<1.12.1": ">1.12.1"
+    }
   }
 }
