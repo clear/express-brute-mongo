@@ -1,6 +1,4 @@
-const clearConfig = require("@clear/eslint-config/js");
-const mochaPlugin = require("eslint-plugin-mocha");
-const globals = require("globals");
+const clearConfig = require("@clear/style/eslint/js");
 
 module.exports = [
     // Test support and config (adds global var definitions and test-specific rules)
