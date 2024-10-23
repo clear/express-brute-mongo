@@ -4,6 +4,8 @@
   "description": "MongoDB store for express-brute.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "format": "eslint --fix .",
     "test": "mocha"
   },
   "repository": {
@@ -12,11 +14,18 @@
   },
   "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
   "license": "BSD",
+  "prettier": "@clear/prettier-config",
   "devDependencies": {
+    "@clear/eslint-config": "^0.5.0",
+    "@clear/prettier-config": "^0.3.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-mocha": "^10.5.0",
     "expect.js": "~0.3.1",
+    "globals": "^15.11.0",
     "mocha": "~10.7.3",
     "moment": "~2.30.1",
-    "mongo-getdb": "~5.0.1"
+    "mongo-getdb": "~5.0.1",
+    "prettier": "^3.3.3"
   },
   "dependencies": {
     "express-brute": "~1.0.1",
