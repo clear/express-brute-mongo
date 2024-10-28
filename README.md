@@ -2,13 +2,13 @@ MongoDB store adapter for the [express-brute](https://github.com/AdamPflug/expre
 
 ## Installation
 
-~~~
+```
 npm install express-brute-mongo
-~~~
+```
 
 ## Usage
 
-~~~javascript
+```javascript
 var ExpressBrute = require('express-brute'),
 var MongoStore = require('express-brute-mongo');
 var MongoClient = require('mongodb').MongoClient;
@@ -28,7 +28,7 @@ app.post('/auth',
     res.send('Success!');
   }
 );
-~~~
+```
 
 ## Expire documents
 
